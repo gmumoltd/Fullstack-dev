@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geoffrey Mumo — Developer & Trainer</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">gm<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="menu-link active">Home</a>
+    <a href="skills.html" class="menu-link">Skills</a>
+    <a href="projects.html" class="menu-link">Projects</a>
+    <a href="contact.html" class="menu-link">Contact</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-tag"><span class="live-dot"></span> Nairobi, Kenya 🇰🇪</div>
+        <h1 class="hero-name">
+          Geoffrey<br>
+          <span class="accent-line">Mumo.</span>
+        </h1>
+        <p class="hero-title">
+          &gt; <span id="typewriter">Full-Stack Developer</span><span class="type-cursor">_</span>
+        </p>
+        <p class="hero-desc">
+          I build fast, beautiful and accessible digital products — and train the next generation of
+          Kenyan technologists through computer literacy and agricultural innovation programmes.
+        </p>
+        <div class="hero-btns">
+          <a href="projects.html" class="btn-primary">View My Work →</a>
+          <a href="contact.html" class="btn-ghost">Hire Me</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-count="30" data-suffix="+">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="4" data-suffix="+">0</div>
+            <div class="stat-label">Years Exp</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="200" data-suffix="+">0</div>
+            <div class="stat-label">Students Trained</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar -->
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring2"></div>
+          <div class="avatar-photo">
+            <img src="images/jeff.png" alt="Geoffrey Mumo" />
+          </div>
+        </div>
+        <div class="tech-badges">
+          <div class="badge">React</div>
+          <div class="badge">Node.js</div>
+          <div class="badge">Python</div>
+          <div class="badge">Trainer</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" style="padding:5rem 2rem; background:var(--surface); border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Who I <em>Am</em></h2>
+
+      <div class="about-grid">
+        <!-- Left: text -->
+        <div>
+          <div class="about-text reveal">
+            <p>
+              I'm <strong>Geoffrey Mumo</strong> — a Nairobi-based full-stack web developer, UI/UX designer,
+              and technology trainer. I combine clean code with thoughtful design to build products
+              that genuinely work for real Kenyan users.
+            </p>
+            <p>
+              Beyond development, I'm passionate about impact: I train communities in
+              <strong>computer literacy</strong>, equipping individuals with the digital skills to
+              access opportunities in Kenya's fast-growing tech economy.
+            </p>
+            <p>
+              I also work at the intersection of <strong>technology and agriculture</strong> — applying
+              innovation to help small-scale farmers improve yields, access market information,
+              and adopt modern farming practices sustainably.
+            </p>
+            <div class="do-chips">
+              <span class="do-chip">Web Development</span>
+              <span class="do-chip">UI/UX Design</span>
+              <span class="do-chip">Computer Training</span>
+              <span class="do-chip">Agri Innovations</span>
+              <span class="do-chip">Mobile Apps</span>
+              <span class="do-chip">Tech Consulting</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-d1" style="margin-top:2rem;">
+            <div class="terminal-box">
+              <div class="terminal-header">
+                <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+                <span class="terminal-title">~/geoffrey.sh</span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> whoami</span></div>
+                <div class="terminal-line out hi">geoffrey_mumo</div>
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> cat roles.txt</span></div>
+                <div class="terminal-line out">Full-Stack Dev | Trainer | Agri-Innovator</div>
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> cat location.txt</span></div>
+                <div class="terminal-line out">Nairobi, Kenya 🇰🇪</div>
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> cat email.txt</span></div>
+                <div class="terminal-line out hi">gmumoltd@gmail.com</div>
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> cat status.txt</span></div>
+                <div class="terminal-line out hi">🟢 Available for Hire</div>
+                <div class="terminal-line"><span class="prompt">$</span><span class="cmd"> _</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: photo collage -->
+        <div class="about-images reveal reveal-d2">
+          <div class="about-img-wrap tall">
+            <img src="images/professional-1.png" alt="Geoffrey coding" />
+          </div>
+          <div class="about-img-wrap">
+            <img src="images/professional-2.png" alt="Geoffrey training" />
+          </div>
+          <div class="about-img-wrap">
+            <img src="images/coding-color.jpg" alt="Training session" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA STRIP ==================== -->
+  <section style="padding:4rem 2rem; background:var(--bg); border-top:1px solid var(--border);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem; position:relative; z-index:1;">
+        <div>
+          <h3 style="font-family:var(--font-disp); font-size:1.8rem; font-weight:800; letter-spacing:-0.02em; margin-bottom:0.4rem;">
+            Ready to work together?
+          </h3>
+          <p style="color:var(--muted); font-size:0.85rem;">Let's build something amazing for your organisation or community.</p>
+        </div>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="skills.html" class="btn-ghost">My Skills →</a>
+          <a href="contact.html" class="btn-primary">Get In Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <span class="footer-logo">gm.dev</span>
+    <div class="footer-links-row">
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span>© 2025 Geoffrey Mumo · Nairobi, Kenya 🇰🇪</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
