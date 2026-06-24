@@ -111,7 +111,7 @@ document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
 /* ---- Typewriter (index only) ---- */
 const typeEl = document.getElementById('typewriter');
 if (typeEl) {
-  const phrases = ['Web Developer','UI/UX Designer','Full-Stack Engineer','API & Payments Integrator','Founder @ Gmumo Ltd'];
+  const phrases = ['Full-Stack Developer','Computer Literacy Trainer','Agricultural Tech Innovator','UI/UX Designer','Problem Solver'];
   let pi = 0, ci = 0, deleting = false;
   function type() {
     const cur = phrases[pi];

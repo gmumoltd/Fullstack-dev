@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Geoffrey Mumo</title>
+  <title>Projects — Geoffrey Mumo | Gmumo Ltd</title>
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -39,16 +39,15 @@
         Featured <em>Projects</em>
       </h1>
       <p style="color:var(--muted); font-size:0.9rem; line-height:1.8; max-width:500px; margin-top:0.8rem;">
-        A selection of web builds, training programmes and agri-tech initiatives I've
-        delivered across Kenya and beyond.
+        A selection of full-stack platforms, client websites and backend systems I've designed, built
+        and deployed under Gmumo Ltd.
       </p>
       <!-- Filter buttons -->
       <div class="projects-filter">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Dev</button>
-        <button class="filter-btn" data-filter="training">Training</button>
-        <button class="filter-btn" data-filter="agri">Agri-Tech</button>
-        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
       </div>
     </div>
   </section>
@@ -58,170 +57,136 @@
     <div class="container">
       <div class="projects-grid">
 
-        <!-- Project 1 — Training (real photo) -->
-        <div class="project-card reveal" data-category="training">
-          <div class="project-img">
-            <img src="images/professional-1.png" alt="Computer Training Programme" />
-          </div>
+        <!-- Project 1 — FindIt Kenya -->
+        <div class="project-card reveal" data-category="fullstack">
+          <div class="project-img-placeholder">🔎</div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">Training</span>
-              <span class="project-tag">ICT</span>
-              <span class="project-tag">Community</span>
+              <span class="project-tag">React 18</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">AI/ML</span>
             </div>
-            <div class="project-title">Computer Literacy Programme</div>
+            <div class="project-title">FindIt Kenya — AI Lost & Found Platform</div>
             <p class="project-desc">
-              Delivered structured computer literacy training to 200+ learners in Nairobi — covering MS Office, 
-              internet navigation, email, digital safety, and career-ready digital skills for employment and entrepreneurship.
+              A full-stack lost and found platform for Kenyan institutions — universities, hospitals, airports
+              and malls. AI-powered item matching using CLIP image embeddings and sentence transformers with a
+              weighted confidence scoring engine, multi-tenant institution dashboards, M-Pesa Daraja billing,
+              and SMS/WhatsApp notifications via Africa's Talking. Deployed on Netlify (frontend) and Render
+              (backend) with GitHub Actions CI/CD.
             </p>
             <div class="project-links">
-              <a href="contact.html" class="project-link">Enquire About Training →</a>
+              <a href="https://finditkenya.netlify.app" target="_blank" rel="noopener" class="project-link">Live Site →</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 — Training (real photo) -->
-        <div class="project-card reveal reveal-d1" data-category="training">
-          <div class="project-img">
-            <img src="images/coding-bw.png" alt="One-on-one Coding Mentorship" />
-          </div>
+        <!-- Project 2 — LuvWay Kenya -->
+        <div class="project-card reveal reveal-d1" data-category="frontend">
+          <div class="project-img-placeholder">✝️</div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">Mentorship</span>
-              <span class="project-tag">Web Dev</span>
-              <span class="project-tag">Youth</span>
+              <span class="project-tag">HTML/CSS/JS</span>
+              <span class="project-tag">EmailJS</span>
+              <span class="project-tag">M-Pesa</span>
             </div>
-            <div class="project-title">1-on-1 Coding Mentorship</div>
+            <div class="project-title">LuvWay Kenya — Children's Christian Ministry Website</div>
             <p class="project-desc">
-              Hands-on mentorship sessions teaching HTML, CSS, JavaScript and Python to youth from underserved
-              communities, giving them a direct pathway into the digital economy.
+              A multi-page website for Vision Bearer Bible Clubs, a children's Christian ministry in Kenya.
+              Responsive layout with a sticky navbar, custom Playfair Display and DM Sans typography, an
+              animated "GROW" intro sequence, a 16-lesson curriculum page, and a sliding "Get Involved" panel
+              with an EmailJS contact form and M-Pesa donation flow. Full deployment on Vercel with DNS via
+              Host Africa, Google Search Console setup, and sitemap submission.
             </p>
             <div class="project-links">
-              <a href="contact.html" class="project-link">Book a Session →</a>
+              <a href="https://luvway-k.co.ke" target="_blank" rel="noopener" class="project-link">Live Site →</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 3 — Web -->
-        <div class="project-card reveal reveal-d2" data-category="web">
+        <!-- Project 3 — Bliss Kenya -->
+        <div class="project-card reveal reveal-d2" data-category="frontend">
           <div class="project-img">
             <img src="images/professional-2.png" alt="Bliss Kenya Website" />
           </div>
           <div class="project-body">
             <div class="project-tags">
               <span class="project-tag">Bootstrap 5</span>
-              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">CSS Custom Properties</span>
               <span class="project-tag">JS</span>
             </div>
-            <div class="project-title">Bliss Kenya Multi-Page Website</div>
+            <div class="project-title">Bliss Kenya — Multi-Sector Community Organisation Site</div>
             <p class="project-desc">
-              Designed and built a full mobile-first, multi-page website for Bliss Kenya — covering education,
-              technology, health consultancy and agriculture divisions with a unified Bootstrap 5 design system.
+              A website for a community organisation spanning four sub-brands — non-formal education,
+              computer college, cyber services, and agriculture. Centralised component injection via a custom
+              components.js file for scalable maintainability, CSS custom properties for consistent branding
+              across sub-brands, full SEO implementation, and a services &amp; pricing table for the
+              organisation's salon arm.
             </p>
             <div class="project-links">
-              <a href="#" class="project-link">Live Site →</a>
-              <a href="#" class="project-link">GitHub →</a>
+              <a href="https://blisskenya.netlify.app" target="_blank" rel="noopener" class="project-link">Live Site →</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 4 — Agri-Tech -->
-        <div class="project-card reveal" data-category="agri">
-          <div class="project-img-placeholder">🌾</div>
+        <!-- Project 4 — AIC Youth Camp -->
+        <div class="project-card reveal" data-category="frontend">
+          <div class="project-img-placeholder">⛺</div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">Agri-Tech</span>
-              <span class="project-tag">React</span>
+              <span class="project-tag">HTML/CSS/JS</span>
+              <span class="project-tag">Animated Typography</span>
+            </div>
+            <div class="project-title">AIC Youth Camp 2026 — Event Website</div>
+            <p class="project-desc">
+              An immersive event website for AIC Jericho Youth Ministry's Summer Camp 2026 in Mombasa, Kenya.
+              Bold animated typography, a scroll-driven narrative layout with dynamic scripture and theme
+              sections, and a dark, high-contrast visual aesthetic optimised for both mobile and desktop.
+            </p>
+            <div class="project-links">
+              <a href="https://aicyouthcamp.netlify.app" target="_blank" rel="noopener" class="project-link">Live Site →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 — Limika Vanguard -->
+        <div class="project-card reveal reveal-d1" data-category="backend">
+          <div class="project-img-placeholder">🤖</div>
+          <div class="project-body">
+            <div class="project-tags">
               <span class="project-tag">Node.js</span>
+              <span class="project-tag">WebSocket</span>
+              <span class="project-tag">WebRTC</span>
             </div>
-            <div class="project-title">FarmConnect Kenya</div>
+            <div class="project-title">Limika Vanguard — Autonomous Farm Robot Backend</div>
             <p class="project-desc">
-              A web platform connecting smallholder farmers directly to urban buyers, reducing post-harvest losses
-              and improving income. Features real-time market pricing, order management and SMS notifications.
+              Architected the full backend system for an autonomous farm robot project under Gmumo Ltd.
+              WebSocket telemetry for real-time robot status, WebRTC for live video streaming, a REST API,
+              an alert rule engine integrated with Africa's Talking SMS notifications, and an M-Pesa Daraja
+              billing economy. Delivered comprehensive technical documentation as a formatted Word document
+              for client handover.
             </p>
             <div class="project-links">
-              <a href="contact.html" class="project-link">View Case Study →</a>
-              <a href="#" class="project-link">GitHub →</a>
+              <a href="contact.html" class="project-link">Enquire About This Project →</a>
             </div>
           </div>
         </div>
 
-        <!-- Project 5 — Agri -->
-        <div class="project-card reveal reveal-d1" data-category="agri">
-          <div class="project-img-placeholder">📱</div>
+        <!-- Project 6 — Class Attendance App -->
+        <div class="project-card reveal reveal-d2" data-category="fullstack">
+          <div class="project-img-placeholder">📋</div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="project-tag">Mobile App</span>
-              <span class="project-tag">React Native</span>
-              <span class="project-tag">Agri</span>
+              <span class="project-tag">HTML/CSS/JS</span>
+              <span class="project-tag">CSV Export</span>
             </div>
-            <div class="project-title">AgriSense Field App</div>
+            <div class="project-title">Class Attendance App</div>
             <p class="project-desc">
-              A mobile app for farmers to track crop health, irrigation schedules, weather alerts and soil data.
-              Works offline-first, designed for low-bandwidth environments across rural Kenya.
+              A web-based class attendance tracking system with a PIN-protected tutor dashboard and CSV
+              export functionality for attendance records.
             </p>
             <div class="project-links">
-              <a href="contact.html" class="project-link">Learn More →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 — Design -->
-        <div class="project-card reveal reveal-d2" data-category="design">
-          <div class="project-img-placeholder">🎨</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">Figma</span>
-              <span class="project-tag">UI/UX</span>
-              <span class="project-tag">Branding</span>
-            </div>
-            <div class="project-title">Community NGO Brand & Web Design</div>
-            <p class="project-desc">
-              Full brand identity and website UI/UX design for a Nairobi-based NGO — including logo, colour system,
-              typography, wireframes, and responsive high-fidelity mockups in Figma.
-            </p>
-            <div class="project-links">
-              <a href="contact.html" class="project-link">View Design →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 7 — Web -->
-        <div class="project-card reveal" data-category="web">
-          <div class="project-img-placeholder">🏪</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">E-commerce</span>
-              <span class="project-tag">WordPress</span>
-              <span class="project-tag">WooCommerce</span>
-            </div>
-            <div class="project-title">Local Business Online Store</div>
-            <p class="project-desc">
-              Built and launched an e-commerce website for a Nairobi retailer — custom WordPress theme,
-              M-Pesa payment integration, inventory management and mobile-optimised checkout flow.
-            </p>
-            <div class="project-links">
-              <a href="contact.html" class="project-link">Build My Store →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 8 — Training -->
-        <div class="project-card reveal reveal-d1" data-category="training">
-          <div class="project-img-placeholder">📚</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="project-tag">Curriculum</span>
-              <span class="project-tag">Training</span>
-              <span class="project-tag">Agriculture</span>
-            </div>
-            <div class="project-title">Agri-Innovation Training Curriculum</div>
-            <p class="project-desc">
-              Developed and delivered a 12-week agricultural innovation curriculum for farmers in Machakos County,
-              covering drip irrigation tech, mobile farm records, and digital market access tools.
-            </p>
-            <div class="project-links">
-              <a href="contact.html" class="project-link">Collaborate →</a>
+              <a href="contact.html" class="project-link">Enquire About This Project →</a>
             </div>
           </div>
         </div>
@@ -238,7 +203,7 @@
           <h3 style="font-family:var(--font-disp); font-size:1.8rem; font-weight:800; letter-spacing:-0.02em; margin-bottom:0.4rem;">
             Have a project in mind?
           </h3>
-          <p style="color:var(--muted); font-size:0.85rem;">I'm available for freelance work, training contracts and tech consulting.</p>
+          <p style="color:var(--muted); font-size:0.85rem;">I'm available for freelance web development, full-stack builds and integration work.</p>
         </div>
         <a href="contact.html" class="btn-primary">Start a Conversation →</a>
       </div>
@@ -254,7 +219,7 @@
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </div>
-    <span>© 2025 Geoffrey Mumo · Nairobi, Kenya 🇰🇪</span>
+    <span>© 2026 Geoffrey Mumo · Nairobi, Kenya 🇰🇪</span>
   </footer>
 
   <script src="main.js"></script>
